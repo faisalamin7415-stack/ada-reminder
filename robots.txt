@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faisalamin7415-stack.github.io/ada-reminder/sitemap.xml

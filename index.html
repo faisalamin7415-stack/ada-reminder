@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ada Reminder — Alarm Windows yang Tetap Berbunyi Walau Aplikasi Ditutup</title>
+  <meta name="description" content="Ada Reminder adalah aplikasi alarm Windows 10/11 yang tetap berbunyi walau jendelanya ditutup. Atur jadwal sekali, harian, atau hari tertentu, ganti nada dering, dan berhenti otomatis. Gratis, offline, tanpa akun.">
+  <meta name="theme-color" content="#060B14">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://faisalamin7415-stack.github.io/ada-reminder/">
+  <meta property="og:title" content="Ada Reminder — Alarm yang tetap berbunyi">
+  <meta property="og:description" content="Alarm Windows yang tetap berbunyi walau aplikasinya ditutup. Nada dering bisa diganti, jadwal fleksibel, dan gratis.">
+  <meta property="og:image" content="https://faisalamin7415-stack.github.io/ada-reminder/assets/app-main.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://faisalamin7415-stack.github.io/ada-reminder/">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Ada Reminder — kembali ke atas">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 8.6a6 6 0 1 0-12 0c0 7-2.2 7.4-2.2 8.8h16.4C20.2 16 18 15.6 18 8.6Z" fill="currentColor"/>
+            <path d="M9.6 20.2a2.6 2.6 0 0 0 4.8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Ada Reminder</strong>
+          <small>Pengingat waktu</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-controls="navMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Navigasi utama">
+        <a href="#fitur">Fitur</a>
+        <a href="#tampilan">Tampilan</a>
+        <a href="#cara-pakai">Cara pakai</a>
+        <a href="#mobile">Mobile</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="download/Ada-Reminder-v2.0.0-win64.zip" download>
+          Unduh gratis
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Dibuat untuk Windows 10 &amp; 11
+          </span>
+          <h1>Alarm yang tetap <span class="grad">berbunyi</span>, bahkan saat aplikasinya ditutup.</h1>
+          <p class="hero-lead">
+            Tinggalkan alarm biasa yang mudah terlewat. Ada Reminder memakai
+            Windows Task Scheduler, jadi pengingatmu tetap jalan — tanpa perlu
+            aplikasi terus terbuka.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="download/Ada-Reminder-v2.0.0-win64.zip" download>
+              Unduh untuk Windows
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="#tampilan">
+              Lihat tampilan
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <ul class="hero-meta" aria-label="Keunggulan singkat">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Gratis
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Tanpa akun
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              100% offline
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="visual-glow" aria-hidden="true"></div>
+          <div class="window-frame">
+            <div class="window-bar" aria-hidden="true">
+              <span class="window-dots"><i></i><i></i><i></i></span>
+              <span class="window-title">Ada Reminder</span>
+              <span class="window-spacer"></span>
+            </div>
+            <img src="assets/app-main.png" width="1140" height="730" alt="Tampilan utama Ada Reminder dengan daftar alarm, filter, dan sakelar aktif">
+          </div>
+
+          <div class="floating-card is-bottom">
+            <span class="float-icon green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <span class="float-copy">
+              <strong>Jadwal Windows aktif</strong>
+              <small>Tetap berbunyi saat app ditutup</small>
+            </span>
+          </div>
+
+          <div class="floating-pill is-top">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            3 alarm aktif
+          </div>
+        </div>
+      </div>
+
+      <div class="container trust-strip reveal">
+        <div class="trust-item">
+          <strong>100%</strong>
+          <span>Data di perangkatmu</span>
+        </div>
+        <div class="trust-item">
+          <strong>±13 MB</strong>
+          <span>Ringan, tanpa installer</span>
+        </div>
+        <div class="trust-item">
+          <strong>6 format</strong>
+          <span>WAV, MP3, WMA, M4A, dll.</span>
+        </div>
+        <div class="trust-item">
+          <strong>0 akun</strong>
+          <span>Langsung pakai</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="fitur">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Yang membuatnya berbeda</span>
+          <h2>Alarm yang bekerja untukmu,<br>bukan menunggu aplikasi dibuka.</h2>
+          <p>Semua fitur penting, tanpa menu yang membingungkan. Fokus pada satu hal: mengingatkanmu tepat waktu.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l2.5 2.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.9"/><path d="M5.5 4.5 3.6 6.4M18.5 4.5l1.9 1.9" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Tetap berbunyi walau ditutup</h3>
+            <p>Alarm dijalankan oleh Windows Task Scheduler. Kamu boleh menutup jendela, bahkan tidak membuka aplikasinya sama sekali.</p>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 18V6.5l10-2V16" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.5" stroke="currentColor" stroke-width="1.9"/><circle cx="16.5" cy="16" r="2.5" stroke="currentColor" stroke-width="1.9"/></svg>
+            </span>
+            <h3>Nada dering milikmu</h3>
+            <p>Pilih file WAV, MP3, WMA, M4A, atau format audio lain. Ada juga lonceng bawaan yang lembut kalau kamu ingin langsung pakai.</p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><rect x="3.5" y="5" width="17" height="16" rx="3" stroke="currentColor" stroke-width="1.9"/><path d="M8 13h2m4 0h2M8 17h2m4 0h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Sekali, harian, atau hari tertentu</h3>
+            <p>Buat alarm untuk satu momen penting, rutinitas setiap hari, atau jadwal mingguan seperti Senin–Jumat.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M12 5v14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.9"/></svg>
+            </span>
+            <h3>Berhenti otomatis</h3>
+            <p>Pasang tanggal berhenti untuk alarm harian atau mingguan. Cocok untuk pengingat obat, kelas, atau program yang punya batas waktu.</p>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.9"/></svg>
+            </span>
+            <h3>Sakelar per alarm</h3>
+            <p>Jeda alarm tanpa menghapusnya. Nyalakan lagi saat dibutuhkan — jadwal Windows ikut diperbarui otomatis.</p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M20 12a8 8 0 1 1-2.34-5.66" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M20 4v5h-5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Tunda atau matikan</h3>
+            <p>Saat alarm berbunyi, pilih <em>Tunda</em> untuk beberapa menit lagi atau <em>Matikan</em> untuk menghentikan dering saat itu juga.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="section section-alt" id="tampilan">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Tampilan aplikasi</span>
+          <h2>Rapi, gelap, dan enak dilihat.</h2>
+          <p>Dirancang agar kamu bisa melihat jadwal berikutnya dalam sekali pandang — tanpa rasa seperti sedang membuka software kantor.</p>
+        </div>
+
+        <div class="showcase-row">
+          <div class="showcase-copy reveal">
+            <span class="tag">Dashboard</span>
+            <h3>Semua pengingat dalam satu layar.</h3>
+            <p>Lihat jam, jadwal berikutnya, status aktif, dan nada dering dari setiap alarm. Filter <strong>Aktif</strong> dan <strong>Tidak aktif</strong> membantumu menemukan yang sedang dijeda.</p>
+            <ul class="check-list">
+              <li>Kartu alarm dengan tombol edit dan hapus</li>
+              <li>Statistik jumlah alarm aktif</li>
+              <li>Waktu berbunyi berikutnya dalam bahasa manusia</li>
+              <li>Tombol tes dering sebelum menyimpan</li>
+            </ul>
+          </div>
+          <figure class="screenshot-card reveal delay-1">
+            <img src="assets/app-main.png" width="1140" height="730" loading="lazy" alt="Dashboard Ada Reminder menampilkan empat alarm dengan status aktif dan tidak aktif">
+            <figcaption>Dashboard utama Ada Reminder.</figcaption>
+          </figure>
+        </div>
+
+        <div class="showcase-row reverse">
+          <div class="showcase-copy reveal">
+            <span class="tag">Alarm baru</span>
+            <h3>Atur detail tanpa ribet.</h3>
+            <p>Isi nama, pilih jam, tentukan pengulangan, lalu pilih nada dering. Semua ada di satu dialog yang ringkas — termasuk pilihan tanggal berhenti otomatis.</p>
+            <ul class="check-list">
+              <li>Format 24 jam dengan pemilih jam dan menit</li>
+              <li>Chip hari untuk alarm mingguan</li>
+              <li>Pratinjau nada dering sebelum disimpan</li>
+              <li>Alarm bisa langsung dinonaktifkan</li>
+            </ul>
+          </div>
+          <figure class="screenshot-card narrow reveal delay-1">
+            <img src="assets/alarm-dialog.png" width="640" height="580" loading="lazy" alt="Dialog edit alarm dengan pengaturan nama, jam, pengulangan, nada dering, dan tanggal berhenti otomatis">
+            <figcaption>Dialog alarm baru dan edit alarm.</figcaption>
+          </figure>
+        </div>
+
+        <div class="ring-panel reveal">
+          <div class="ring-copy">
+            <span class="tag tag-green">Saat waktunya tiba</span>
+            <h3>Layar dering yang jelas,<br>tombol yang langsung terlihat.</h3>
+            <p>Saat alarm berbunyi, jendela besar muncul di atas aplikasi lain dengan pilihan <strong>Matikan</strong> dan <strong>Tunda</strong>. Suara akan berhenti saat jendela ditutup.</p>
+            <div class="ring-actions">
+              <span><i class="mini-dot green"></i> Nada berulang</span>
+              <span><i class="mini-dot amber"></i> Selalu di atas</span>
+              <span><i class="mini-dot blue"></i> Tunda fleksibel</span>
+            </div>
+          </div>
+          <figure class="screenshot-card ring-shot">
+            <img src="assets/ring-alert.png" width="880" height="540" loading="lazy" alt="Jendela dering Ada Reminder bertuliskan Waktunya istirahat dengan tombol Matikan dan Tunda 5 menit">
+            <figcaption>Tampilan saat alarm berbunyi.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="cara-pakai">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cara pakai</span>
+          <h2>Siap dalam kurang dari satu menit.</h2>
+          <p>Tidak perlu instalasi rumit. Unduh, jalankan, buat alarm pertama, lalu tutup jendelanya. Selesai.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step-card reveal">
+            <span class="step-number">01</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Unduh &amp; jalankan</h3>
+            <p>Ekstrak file ZIP, lalu buka <strong>Ada Reminder.exe</strong>. Tidak perlu memasang Python atau aplikasi tambahan.</p>
+          </li>
+          <li class="step-card reveal delay-1">
+            <span class="step-number">02</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
+            <h3>Buat alarm</h3>
+            <p>Klik <strong>+ Alarm Baru</strong>, isi nama dan jamnya, pilih pengulangan, lalu tentukan nada dering jika ingin.</p>
+          </li>
+          <li class="step-card reveal delay-2">
+            <span class="step-number">03</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Tutup jendelanya</h3>
+            <p>Alarm sudah terjadwal di Windows. Kamu bisa menutup aplikasi — saat waktunya tiba, jendela dering akan muncul sendiri.</p>
+          </li>
+        </ol>
+
+        <div class="tip-box reveal">
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9.5 18h5M10 21h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8.2 14.5a7 7 0 1 1 7.6 0c-.8.6-1.3 1.4-1.3 2.3H9.5c0-.9-.5-1.7-1.3-2.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <p><strong>Tips:</strong> letakkan file EXE di folder tetap. Saat pertama dijalankan, Ada Reminder juga menyimpan salinan di <code>%LOCALAPPDATA%\AdaReminder</code> agar jadwal Windows tetap valid jika file unduhan dipindah atau dihapus.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="section" id="unduh">
+      <div class="container">
+        <div class="download-panel reveal">
+          <div class="download-copy">
+            <span class="eyebrow light">Gratis untuk Windows</span>
+            <h2>Beri waktu istirahatmu<br>pengingat yang bisa diandalkan.</h2>
+            <p>Unduh Ada Reminder v2.0.0 untuk Windows 10/11 64-bit. Pilih <strong>Installer</strong> agar aplikasi terpasang dengan shortcut, atau ZIP/EXE untuk versi portable. Tanpa akun, tanpa langganan, dan semua data tetap di komputermu.</p>
+
+            <div class="download-actions">
+              <a class="btn btn-dark" href="download/Ada-Reminder-v2.0.0-win64.zip" download>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Unduh ZIP (Windows)
+              </a>
+              <a class="btn btn-outline-dark" href="download/Ada-Reminder-Setup-v2.0.0.exe" download>
+                Installer (Setup)
+              </a>
+              <a class="btn btn-outline-dark" href="download/Ada%20Reminder.exe" download>
+                File .exe langsung
+              </a>
+            </div>
+
+            <div class="download-meta">
+              <span>v2.0.0</span>
+              <span>±12,6 MB</span>
+              <span>Windows 10/11 64-bit</span>
+            </div>
+          </div>
+
+          <div class="download-card">
+            <h3>Isi unduhan</h3>
+            <ul class="download-list">
+              <li><span>Ada Reminder.exe</span><small>Aplikasi utama</small></li>
+              <li><span>README.md</span><small>Panduan &amp; troubleshooting</small></li>
+              <li><span>Panduan singkat</span><small>Langkah pertama memakai alarm</small></li>
+            </ul>
+            <div class="notice">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5m0 3h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+              <p>File belum ditandatangani digital. Jika Windows SmartScreen muncul, pilih <strong>More info → Run anyway</strong>.</p>
+            </div>
+            <p class="checksum" id="checksumLine">SHA-256 ZIP: <code id="checksum">E95EA37BF3F28C3291730FE491CEBF3FDDFF01D09EC5FF0DB9ADEB7ACABF0B92</code></p>
+          </div>
+        </div>
+
+        <div class="requirements reveal">
+          <div>
+            <h3>Yang perlu disiapkan</h3>
+            <p>Windows 10 atau 11 (64-bit), ruang kosong ±15 MB, dan akses ke Windows Task Scheduler. Tidak perlu Python untuk versi EXE.</p>
+          </div>
+          <div>
+            <h3>Privasi</h3>
+            <p>Tidak ada akun, telemetri, atau koneksi internet. Alarm dan pengaturan disimpan sebagai file JSON di folder data lokalmu.</p>
+          </div>
+          <div>
+            <h3>Masih ingin dari source?</h3>
+            <p>Jalankan <code>Jalankan Ada Reminder.bat</code> dengan Python 3.11+ dan Tkinter. Cocok kalau kamu ingin memodifikasi kodenya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE -->
+    <section class="section" id="mobile">
+      <div class="container">
+        <div class="mobile-panel reveal">
+          <div class="mobile-copy">
+            <span class="eyebrow">Juga di ponsel</span>
+            <h2>Pengingat yang sama,<br>di Android dan iPhone.</h2>
+            <p>
+              Versi mobile dibuat dengan Flutter. Alarm sekali, harian, dan hari tertentu,
+              tanggal berhenti otomatis, nada dering kustom, serta tombol tunda tetap ada -
+              dengan tampilan gelap-amber yang sama seperti versi Windows.
+            </p>
+
+            <div class="mobile-badges">
+              <span class="mobile-badge">v2.1.0</span>
+              <span class="mobile-badge">Android 7+</span>
+              <span class="mobile-badge">iOS 13+</span>
+              <span class="mobile-badge">Tanpa akun</span>
+            </div>
+
+            <div class="download-actions">
+              <a class="btn btn-primary" href="download/Ada-Reminder-v2.1.0-arm64.apk" download>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Unduh APK Android (22,9 MB)
+              </a>
+              <a class="btn btn-ghost" href="#unduh">Versi Windows</a>
+            </div>
+            <p class="download-note">
+              Ponsel lama 32-bit? Unduh
+              <a href="download/Ada-Reminder-v2.1.0-armeabi-v7a.apk" download>versi armeabi-v7a</a>,
+              atau
+              <a href="download/Ada-Reminder-v2.1.0-android.apk" download>APK universal</a>
+              (56,9 MB) yang jalan di semua perangkat.
+            </p>
+          </div>
+
+          <div class="mobile-stores">
+            <div class="mobile-store">
+              <span class="mobile-store-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 9h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/><path d="M9 9V7a3 3 0 0 1 6 0v2M9 14h.01M15 14h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h3>Android - file APK</h3>
+                <p>
+                  Unduh APK, buka di ponsel, lalu izinkan pemasangan dari sumber ini.
+                  Tidak perlu Play Store, tanpa akun, tanpa iklan.
+                </p>
+                <ul class="apk-list">
+                  <li>
+                    <a class="apk-link" href="download/Ada-Reminder-v2.1.0-arm64.apk" download>Ada-Reminder-v2.1.0-arm64.apk</a>
+                    <span>22,9 MB - untuk hampir semua ponsel Android</span>
+                  </li>
+                  <li>
+                    <a class="apk-link" href="download/Ada-Reminder-v2.1.0-armeabi-v7a.apk" download>Ada-Reminder-v2.1.0-armeabi-v7a.apk</a>
+                    <span>20,4 MB - ponsel 32-bit lama</span>
+                  </li>
+                  <li>
+                    <a class="apk-link" href="download/Ada-Reminder-v2.1.0-android.apk" download>Ada-Reminder-v2.1.0-android.apk</a>
+                    <span>56,9 MB - universal, semua perangkat</span>
+                  </li>
+                </ul>
+                <p class="apk-hash">
+                  Cek keaslian file dengan checksum SHA-256 di
+                  <code>download/…apk.sha256</code>.
+                </p>
+              </div>
+            </div>
+
+            <div class="mobile-store">
+              <span class="mobile-store-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M16.5 3.5c.2 1.3-.4 2.6-1.2 3.5-.9 1-2.3 1.7-3.6 1.6-.2-1.3.5-2.6 1.3-3.4.9-.9 2.3-1.6 3.5-1.7Z" fill="currentColor"/><path d="M19.5 17.2c-.6 1.4-1.3 2.8-2.4 4-.9 1-1.6 1.6-2.8 1.6-1.1 0-1.5-.7-2.8-.7-1.3 0-1.8.7-2.8.7-1.2 0-2.1-.9-3-2-1.7-2.2-3-6.2-1.2-8.9 1-1.5 2.6-2.4 4.2-2.4 1.2 0 2.4.8 3.2.8.8 0 2.3-1 3.8-.9 1.3.1 2.5.6 3.4 1.7-3 1.8-2.5 6 .4 7.1Z" fill="currentColor"/></svg>
+              </span>
+              <div>
+                <h3>iPhone &amp; iPad - dari source</h3>
+                <p>
+                  Proyek iOS sudah disiapkan, tetapi harus dibangun dan ditandatangani
+                  dengan Xcode di macOS. Langkahnya ada di
+                  <code>mobile/README.md</code>.
+                </p>
+              </div>
+            </div>
+
+            <div class="mobile-store">
+              <span class="mobile-store-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5m0 3h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+              </span>
+              <div>
+                <h3>Agar alarm tepat waktu</h3>
+                <p>
+                  Izinkan notifikasi dan "Alarm &amp; pengingat" saat diminta. Di sebagian
+                  merek Android, matikan juga optimasi baterai untuk aplikasi ini.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <span class="eyebrow">Pertanyaan umum</span>
+          <h2>Hal yang sering ditanyakan.</h2>
+          <p>Belum menemukan jawabanmu? Cek juga <code>README.md</code> di dalam file unduhan.</p>
+          <a class="text-link" href="download/Ada-Reminder-v2.0.0-win64.zip" download>
+            Unduh paket lengkap
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="faq-list reveal delay-1">
+          <details open>
+            <summary>Apakah alarm benar-benar berbunyi saat aplikasi ditutup?</summary>
+            <p>Ya. Setiap alarm membuat jadwal di Windows Task Scheduler. Windows yang memicu aplikasi pada waktu yang ditentukan, jadi jendela utama tidak perlu terbuka. Alarm juga akan tetap berjalan setelah komputermu restart.</p>
+          </details>
+          <details>
+            <summary>Apakah saya perlu memasang Python?</summary>
+            <p>Tidak, jika memakai file <strong>Ada Reminder.exe</strong>. Python hanya dibutuhkan jika kamu ingin menjalankan versi source lewat <code>Jalankan Ada Reminder.bat</code>.</p>
+          </details>
+          <details>
+            <summary>Format audio apa saja yang didukung?</summary>
+            <p>WAV diputar langsung lewat Windows. Format lain seperti MP3, WMA, dan M4A diputar lewat pemutar media bawaan Windows. Setelah dipilih, file disalin ke folder data agar alarm tetap punya suara meskipun file aslinya dipindah.</p>
+          </details>
+          <details>
+            <summary>Bagaimana cara menghentikan alarm permanen?</summary>
+            <p>Buka aplikasi, lalu hapus alarm lewat tombol <strong>Hapus</strong> di kartunya. Untuk menjeda sementara, matikan sakelar <strong>Alarm aktif</strong>. Kamu juga bisa memakai tanggal <strong>Berhenti otomatis</strong> agar alarm berhenti sendiri setelah tanggal tertentu.</p>
+          </details>
+          <details>
+            <summary>Kenapa Windows menampilkan peringatan SmartScreen?</summary>
+            <p>Karena file belum memiliki sertifikat code signing. Ini normal untuk aplikasi kecil yang didistribusikan langsung. Klik <strong>More info</strong>, lalu <strong>Run anyway</strong>. Kamu juga bisa memeriksa checksum SHA-256 yang tertera di halaman ini.</p>
+          </details>
+          <details>
+            <summary>Di mana data saya disimpan?</summary>
+            <p>Di <code>%APPDATA%\AdaReminder</code>. Isinya antara lain <code>alarms.json</code>, pengaturan, nada dering pilihanmu, file jadwal, dan log. Tidak ada data yang dikirim ke server.</p>
+          </details>
+          <details>
+            <summary>Apakah alarm bisa tunda beberapa menit?</summary>
+            <p>Bisa. Saat alarm berbunyi, klik <strong>Tunda</strong>. Durasi tunda bisa diatur di menu Pengaturan (1–60 menit). Tunda membuat jadwal Windows baru, jadi tetap berfungsi meski jendela utama ditutup.</p>
+          </details>
+          <details>
+            <summary>Apakah ini benar-benar gratis?</summary>
+            <p>Ya. Tidak ada langganan atau fitur terkunci. Kamu bisa mengunduh, memakai, dan menyimpan aplikasinya tanpa biaya.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section final-cta">
+      <div class="container final-cta-inner reveal">
+        <div>
+          <span class="eyebrow">Siap mencoba?</span>
+          <h2>Mulai dari satu alarm hari ini.</h2>
+          <p>Unduh, buat pengingat pertamamu, lalu tutup jendelanya. Biarkan Windows yang mengingatkan.</p>
+        </div>
+        <a class="btn btn-primary" href="download/Ada-Reminder-v2.0.0-win64.zip" download>
+          Unduh Ada Reminder
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Ada Reminder">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M18 8.6a6 6 0 1 0-12 0c0 7-2.2 7.4-2.2 8.8h16.4C20.2 16 18 15.6 18 8.6Z" fill="currentColor"/>
+              <path d="M9.6 20.2a2.6 2.6 0 0 0 4.8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text"><strong>Ada Reminder</strong><small>Pengingat waktu</small></span>
+        </a>
+        <p>Alarm Windows yang tetap berbunyi, bahkan saat aplikasinya ditutup.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>Navigasi</h3>
+          <a href="#fitur">Fitur</a>
+          <a href="#tampilan">Tampilan</a>
+          <a href="#cara-pakai">Cara pakai</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h3>Unduhan</h3>
+          <a href="download/Ada-Reminder-v2.0.0-win64.zip" download>Paket ZIP</a>
+          <a href="download/Ada%20Reminder.exe" download>File .exe</a>
+          <a href="privasi.html">Kebijakan privasi</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Ada Reminder. Dibuat untuk Windows.</p>
+      <p>Versi 2.0.0 · Bahasa Indonesia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

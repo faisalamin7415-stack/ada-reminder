@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi — Ada Reminder</title>
+  <meta name="description" content="Kebijakan privasi Ada Reminder: tidak ada akun, telemetri, atau pengiriman data. Semua alarm dan pengaturan disimpan secara lokal di komputermu.">
+  <meta name="theme-color" content="#060B14">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="legal-page">
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Ada Reminder — kembali ke beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 8.6a6 6 0 1 0-12 0c0 7-2.2 7.4-2.2 8.8h16.4C20.2 16 18 15.6 18 8.6Z" fill="currentColor"/>
+            <path d="M9.6 20.2a2.6 2.6 0 0 0 4.8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Ada Reminder</strong>
+          <small>Pengingat waktu</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-controls="navMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Navigasi utama">
+        <a href="index.html#fitur">Fitur</a>
+        <a href="index.html#tampilan">Tampilan</a>
+        <a href="index.html#cara-pakai">Cara pakai</a>
+        <a href="index.html#faq">FAQ</a>
+        <a class="nav-cta" href="download/Ada-Reminder-v2.0.0-win64.zip" download>
+          Unduh gratis
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-main" id="main">
+    <div class="container legal-container">
+      <a class="legal-back" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Kembali ke beranda
+      </a>
+
+      <article class="legal-card reveal">
+        <span class="eyebrow">Privasi</span>
+        <h1>Kebijakan Privasi</h1>
+        <p class="legal-updated">Terakhir diperbarui: 31 Oktober 2026 · Berlaku untuk Ada Reminder v2.0.0</p>
+
+        <p>
+          Ada Reminder dibuat dengan prinsip sederhana: aplikasi pengingat tidak
+          perlu mengetahui apa pun tentangmu. Tidak ada akun, tidak ada pelacakan,
+          dan tidak ada data alarm yang dikirim ke server.
+        </p>
+
+        <h2>Data yang disimpan</h2>
+        <p>Aplikasi menyimpan data berikut secara lokal di komputermu:</p>
+        <ul>
+          <li><strong>Alarm dan jadwal</strong> — nama alarm, jam, tanggal, hari pengulangan, dan status aktif.</li>
+          <li><strong>Preferensi</strong> — durasi tunda dan batas waktu dering.</li>
+          <li><strong>Nada dering pilihanmu</strong> — file audio yang kamu impor disalin ke folder data aplikasi.</li>
+          <li><strong>Jadwal Windows</strong> — file XML dan entri Windows Task Scheduler yang diperlukan agar alarm tetap berbunyi.</li>
+          <li><strong>Log teknis</strong> — catatan singkat untuk membantu mencari masalah jika alarm gagal dijadwalkan.</li>
+        </ul>
+        <p>
+          Semua data tersebut berada di <code>%APPDATA%\AdaReminder</code>. Kamu
+          dapat membuka, memeriksa, mencadangkan, atau menghapusnya sendiri kapan saja.
+        </p>
+
+        <h2>Apa yang tidak dilakukan</h2>
+        <ul>
+          <li>Tidak membuat akun atau meminta alamat email.</li>
+          <li>Tidak mengirim data alarm, file audio, atau log ke internet.</li>
+          <li>Tidak memakai analitik, iklan, atau pelacak pihak ketiga di dalam aplikasi.</li>
+          <li>Tidak menjual atau membagikan data kepada pihak lain.</li>
+        </ul>
+
+        <h2>Windows Task Scheduler</h2>
+        <p>
+          Agar alarm tetap berbunyi saat aplikasi ditutup, Ada Reminder membuat
+          jadwal di Windows Task Scheduler. Jadwal ini hanya berisi waktu, nama
+          alarm, dan perintah untuk membuka jendela dering. Windows menjalankannya
+          secara lokal di perangkatmu. Kamu bisa menghapusnya lewat aplikasi
+          (tombol Hapus), menu Pengaturan → Perbaiki jadwal, atau Task Scheduler.
+        </p>
+
+        <h2>Nada dering pihak ketiga</h2>
+        <p>
+          Kamu bertanggung jawab atas file audio yang kamu impor. Pastikan kamu
+          memiliki hak untuk memakai file tersebut. File hanya disalin ke folder
+          data lokal dan tidak diunggah ke mana pun.
+        </p>
+
+        <h2>Situs web ini</h2>
+        <p>
+          Halaman unduhan ini adalah situs statis. Situs tidak memasang cookie
+          pelacak atau formulir pendaftaran. Untuk kenyamanan tampilan, situs
+          memuat font dari Google Fonts; koneksi ke Google dapat mencatat alamat
+          IP dan informasi teknis standar sesuai kebijakan privasi Google.
+          Aplikasi desktop Ada Reminder sendiri tidak memuat font atau konten
+          dari internet.
+        </p>
+
+        <h2>Menghapus data</h2>
+        <p>
+          Untuk menghapus seluruh data, tutup aplikasi, hapus jadwal lewat menu
+          Pengaturan, lalu hapus folder <code>%APPDATA%\AdaReminder</code>. Salinan
+          aplikasi yang dibuat otomatis berada di
+          <code>%LOCALAPPDATA%\AdaReminder</code> dan juga bisa dihapus.
+        </p>
+
+        <h2>Perubahan kebijakan</h2>
+        <p>
+          Jika kebijakan ini berubah, tanggal pembaruan di bagian atas akan
+          disesuaikan. Perubahan besar akan dicatat di catatan rilis atau README
+          yang disertakan dalam paket unduhan.
+        </p>
+
+        <h2>Pertanyaan</h2>
+        <p>
+          Karena tidak ada data yang dikumpulkan, sebagian besar pertanyaan
+          privasi bisa dijawab dengan memeriksa folder data lokalmu. Untuk hal
+          lain, gunakan kanal distribusi tempat kamu mengunduh aplikasi ini.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Ada Reminder">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M18 8.6a6 6 0 1 0-12 0c0 7-2.2 7.4-2.2 8.8h16.4C20.2 16 18 15.6 18 8.6Z" fill="currentColor"/>
+              <path d="M9.6 20.2a2.6 2.6 0 0 0 4.8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text"><strong>Ada Reminder</strong><small>Pengingat waktu</small></span>
+        </a>
+        <p>Alarm Windows yang tetap berbunyi, bahkan saat aplikasinya ditutup.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>Navigasi</h3>
+          <a href="index.html#fitur">Fitur</a>
+          <a href="index.html#tampilan">Tampilan</a>
+          <a href="index.html#cara-pakai">Cara pakai</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div>
+          <h3>Unduhan</h3>
+          <a href="download/Ada-Reminder-v2.0.0-win64.zip" download>Paket ZIP</a>
+          <a href="download/Ada%20Reminder.exe" download>File .exe</a>
+          <a href="privasi.html">Kebijakan privasi</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Ada Reminder. Dibuat untuk Windows.</p>
+      <p>Versi 2.0.0 · Bahasa Indonesia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
